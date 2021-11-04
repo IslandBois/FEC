@@ -22,11 +22,6 @@ const RelatedList = () => {
   return (
 
     <div>
-      <div id="productCardContainer">
-        {
-      relatedIds.map((id) => <div id="productCard" onClick={toggleCompare}><ProductCard key={id} id={id} /></div>)
-      }
-      </div>
       <RelatedContext.Provider value={{ showCompare, clickedItem, currentProduct }}>
         <div id="compareModal">
           <Compare />
