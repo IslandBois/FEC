@@ -44,7 +44,6 @@ const App = () => {
       url: '/products',
     })
       .then((res) => {
-        console.log(res.data);
         setCurrentProduct(res.data[0]);
         getReviewData(res.data[0].id);
       })

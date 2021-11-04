@@ -13,7 +13,7 @@ const Outfit = ({ id }) => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState(0);
 
-  // console.log('context here ', context);
+
 
   const getDisplay = () => {
     axios.get(`/products/${id}`).then((response) => {

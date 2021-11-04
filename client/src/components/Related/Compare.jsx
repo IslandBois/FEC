@@ -15,14 +15,13 @@ const Compare = () => {
       }
     }
     const char = characteristics[index];
-    console.log('char ', char?.gmo);
-    console.log('index = ', index);
+   
     if (char?.gmo === true) {
       a = '√';
     }
     if (char?.fairTrade === true) {
       b = '√';
-      console.log('b = ', b);
+     
     }
     if (char?.local === true) {
       c = '√';
@@ -62,12 +61,12 @@ const Compare = () => {
   };
 
   useEffect(() => {
-    console.log('current = ', current, ' related = ', related);
+   
     checkCurrent();
     checkRelated();
   }, [related]);
 
-  console.log('checking b ', b);
+
 
   if (context.showCompare) {
     return (

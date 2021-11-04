@@ -26,7 +26,6 @@ const Related = () => {
 
   const addOutfitClick = () => {
     setOutfit(currentProduct);
-    console.log('outfit ', outfit);
   };
 
   return (
